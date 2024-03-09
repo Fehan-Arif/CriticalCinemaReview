@@ -25,12 +25,10 @@ body {
 
 .new-releases {
   grid-area: releases;
-  background-color: orange;
 }
 
 .classics {
   grid-area: classics;
-  background-color: brown;
 }
 
 .footer {
@@ -86,8 +84,6 @@ body {
 
 /* Search Bar */
 .search-bar {
-  /* width: 100px; */
-  /* height: 30px; */
   width: 100%;
   max-width: 32.25rem;
   margin: auto;
@@ -129,6 +125,7 @@ body {
 .navbar-login {
   display: flex;
 }
+
 .btn {
   background-color: #A6A6A6;
   border: none;
@@ -148,16 +145,105 @@ body {
   justify-content: center;
   height: 80svh;
 }
+
 .slides {
   background-image: url("../images/1st slide.jpg");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
   background-size: cover;
   height: 80%;
   width: 80%;
   margin: 200px 100px;
 }
-.right-arrow, .left-arrow{
-color: grey;
-font-size: 9rem;
+
+.right-arrow,
+.left-arrow {
+  color: grey;
+  font-size: 9rem;
+}
+
+/* New Releases section */
+
+.new-releases,
+.classics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80svh;
+  color: #fff;
+}
+
+.release-wrapper {
+  width: 80%;
+}
+
+.release-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.release-title h2 {
+  margin-bottom: 0;
+}
+
+.release-title p {
+  margin-bottom: 0;
+}
+
+hr {
+  border: 1px solid grey;
+}
+
+.new-movies,
+.classic-movies {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.movie-item,
+.classic-item {
+  height: 300px;
+  width: 200px;
+}
+
+.movie-img,
+.classic-img {
+  background-image: url("../images/movie-image.jpg");
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  height: 80%;
+  width: 100%;
+}
+
+/* Footer */
+.footer-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  flex-direction: column;
+  color: #fff;
+}
+
+.footer-flex ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+/* Media Queries */
+@media screen and (maxi-width: 1720px) {
+
+  .new-movies,
+  .classic-movies {
+    /* flex-wrap: wrap; */
+  }
 }
