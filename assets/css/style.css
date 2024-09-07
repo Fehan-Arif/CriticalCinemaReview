@@ -148,16 +148,21 @@ body {
   height: 80svh;
 }
 
-.slides {
-  background-image: url("../images/1st slide.jpg");
-  background-position: center;
+/* .slides { */
+  /* background-image: url("../images/1st slide.jpg"); */
+  /* background-position: center; */
   /* Center the image */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   /* Do not repeat the image */
-  background-size: cover;
-  height: 80%;
+/*   background-size: cover; */
+/*   height: 80%; */
+/*   width: 80%; */
+/*   margin: 200px 100px; */
+/* } */
+.mySlides {
+  display: none;
   width: 80%;
-  margin: 200px 100px;
+  height: 80%;
 }
 
 .right-arrow,
