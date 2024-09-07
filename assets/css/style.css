@@ -7,12 +7,14 @@ body {
 /* Grid Areas */
 .left {
   grid-area: leftside;
-  background-color: grey;
+  background-image: url("../svg/film-solid\ \(5\).svg");
+  background-repeat: repeat-y;
 }
 
 .right {
   grid-area: rightside;
-  background-color: grey;
+  background-image: url("../svg/film-solid\ \(5\).svg");
+  background-repeat: repeat-y;
 }
 
 .navbar {
