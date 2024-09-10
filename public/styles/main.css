@@ -230,3 +230,52 @@ img {
     font-size: 11px;
   }
 }
+
+/* New Release */
+#new-release,
+#classics {
+  color: #fff;
+  /* margin: 50px; */
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.release-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.release-title h2 {
+  margin-bottom: 0;
+}
+
+.release-title p {
+  margin-bottom: 0;
+}
+
+hr {
+  border: 1px solid grey;
+}
+
+.new-movies {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.movie-item {
+  height: 300px;
+  width: 200px;
+}
+
+.movie-img {
+  background-image: url("../images/movie-image.jpg");
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /*   /* Do not repeat the image */
+  background-size: cover;
+  height: 80%;
+  width: 100%;
+}
