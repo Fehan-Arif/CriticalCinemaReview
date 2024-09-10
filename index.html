@@ -39,130 +39,37 @@
         </div>
       </nav>
     </section>
-    <!-- Slider -->
-    <section class="slider">
-      <!-- <span class="left-arrow">&lsaquo;</span> -->
-      <!-- <div class="slides"> -->
-      <!--   <img class="mySlides" src="assets/images/1st slide.jpg" /> -->
-      <!--   <img class="mySlides" src="assets/images/juja-han-l3KOZAMPBOU-unsplash.jpg" /> -->
-      <!--   <button class="w3-button w3-display-left" onclick="plusDivs(-1)"> -->
-      <!--     &#10094; -->
-      <!--   </button> -->
-      <!--   <button class="w3-button w3-display-right" onclick="plusDivs(+1)"> -->
-      <!--     &#10095; -->
-      <!--   </button> -->
-      <!-- </div> -->
-      <!-- <span class="right-arrow">&#8250;</span> -->
-      <div class="w3-content w3-display-container">
-        <img class="mySlides" src="assets/images/1st slide.jpg" />
-        <img class="mySlides" src="assets/images/juja-han-l3KOZAMPBOU-unsplash.jpg" />
-        <!-- <img class="mySlides" src="img_mountains.jpg" style="width: 100%" /> -->
-        <!-- <img class="mySlides" src="img_forest.jpg" style="width: 100%" /> -->
+  </header>
+  <main>
+    <section id="slider">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="public/images/erik-mclean-Np_8Kt_QHZU-unsplash.jpg" style="width: 100%" />
+        </div>
 
-        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">
-          &#10094;
-        </button>
-        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">
-          &#10095;
-        </button>
+        <div class="mySlides fade">
+          <img src="public/images/noom-peerapong-2uwFEAGUm6E-unsplash.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="public/images/eduardo-sanchez-dQhtuks_6ck-unsplash.jpg" style="width: 100%" />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
       </div>
     </section>
-    <!-- New Releases -->
-    <section class="new-releases">
-      <div class="release-wrapper">
-        <div class="release-title">
-          <h2>New Releases</h2>
-          <p>View All</p>
-        </div>
-        <hr />
-        <div class="new-movies">
-          <div class="movie-item">
-            <div class="movie-img"></div>
-            <p>Rating: 3.5</p>
-            <p>The Good Movie</p>
-          </div>
-          <div class="movie-item">
-            <div class="movie-img"></div>
-            <p>Rating: 3.5</p>
-            <p>The Good Movie</p>
-          </div>
-          <div class="movie-item">
-            <div class="movie-img"></div>
-            <p>Rating: 3.5</p>
-            <p>The Good Movie</p>
-          </div>
-          <div class="movie-item">
-            <div class="movie-img"></div>
-            <p>Rating: 3.5</p>
-            <p>The Good Movie</p>
-          </div>
-          <div class="movie-item">
-            <div class="movie-img"></div>
-            <p>Rating: 3.5</p>
-            <p>The Good Movie</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Classics -->
-    <section class="classics">
-      <div class="release-wrapper">
-        <div class="release-title">
-          <h2>Classic Movies</h2>
-          <p>View All</p>
-        </div>
-        <hr />
-        <div class="classic-movies">
-          <div class="classic-item">
-            <div class="classic-img"></div>
-            <p>Rating: 3.5</p>
-            <p>The Good Movie</p>
-          </div>
-          <div class="classic-item">
-            <div class="classic-img"></div>
-            <p>Rating: 3.5</p>
-            <p>The Good Movie</p>
-          </div>
-          <div class="classic-item">
-            <div class="classic-img"></div>
-            <p>Rating: 3.5</p>
-            <p>The Good Movie</p>
-          </div>
-          <div class="classic-item">
-            <div class="classic-img"></div>
-            <p>Rating: 3.5</p>
-            <p>The Good Movie</p>
-          </div>
-          <div class="classic-item">
-            <div class="classic-img"></div>
-            <p>Rating: 3.5</p>
-            <p>The Good Movie</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-flex">
-        <ul>
-          <li>
-            <a href=""><i class="fa-brands fa-x-twitter fa-6x" style="color: #a6a6a6"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-brands fa-instagram fa-6x" style="color: #a6a6a6"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-solid fa-envelope fa-6x" style="color: #a6a6a6"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-brands fa-square-facebook fa-6x" style="color: #a6a6a6"></i></a>
-          </li>
-        </ul>
-        <p>©️ Critical Cinema Review 2024</p>
-      </div>
-      <script src="assets/scripts/index.js"></script>
-    </footer>
-  </div>
+  </main>
+  <footer>
+    <script src="public/scripts/index.js"></script>
+  </footer>
 </body>
 
 </html>
