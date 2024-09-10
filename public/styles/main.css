@@ -8,7 +8,9 @@ body {
   display: grid;
   grid-template:
     "left header header header header right"
-    "left main main main main right";
+    "left main main main main right"
+    "left main main main main right"
+    "left footer footer footer footer right";
 }
 
 /* Grid Areas */
@@ -27,6 +29,11 @@ header {
 
 main {
   grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  margin-top: 100px;
 }
 
 /* Aside */
@@ -278,4 +285,27 @@ hr {
   background-size: cover;
   height: 80%;
   width: 100%;
+}
+
+/* Footer */
+.footer-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-flex ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.footer-flex>ul>li>a {
+  color: #a6a6a6;
+}
+
+.footer-flex>ul>li>a:hover {
+  color: grey;
 }
