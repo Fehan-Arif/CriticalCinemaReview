@@ -7,25 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://kit.fontawesome.com/02e9c814b9.js" crossorigin="anonymous"></script>
   <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet" />
-  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="public/styles/main.css" rel="stylesheet" />
 </head>
 
 <body>
-  <div class="wrapper">
-    <!-- Left Side -->
-    <aside class="left">Side left</aside>
-    <!-- Navbar -->
-    <section class="navbar">
+  <aside id="left"></aside>
+  <aside id="right"></aside>
+  <header>
+    <section id="navbar">
       <nav class="navbar-flex">
         <div class="navbar-main">
-          <i class="fa-solid fa-film fa-5x" style="color: #a6a6a6"></i>
+          <div class="brand"></div>
           <h4 id="title-1">Critical</h4>
           <h4 id="title-2">Cinema</h4>
           <h4 id="title-3">Review</h4>
         </div>
         <div class="search-bar">
-          <!-- <img src="" alt=""> -->
-          <!-- <p>Search Movies, TV, Actors, more ...</p> -->
           <div class="searchBar">
             <input id="searchQueryInput" type="text" name="searchQueryInput"
               placeholder="Search Movies, TV, Actors, more ..." value="" />
@@ -42,109 +39,126 @@
         </div>
       </nav>
     </section>
-    <!-- Slider -->
-    <section class="slider">
-      <span class="left-arrow">&lsaquo;</span>
-      <div class="slides"></div>
-      <span class="right-arrow">&#8250;</span>
+  </header>
+  <main>
+    <section id="slider">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="public/images/erik-mclean-Np_8Kt_QHZU-unsplash.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="public/images/noom-peerapong-2uwFEAGUm6E-unsplash.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="public/images/eduardo-sanchez-dQhtuks_6ck-unsplash.jpg" style="width: 100%" />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
     </section>
-    <!-- New Releases -->
-    <section class="new-releases">
-      <div class="release-wrapper">
+    <section id="new-release">
+      <div class="release-container">
         <div class="release-title">
           <h2>New Releases</h2>
           <p>View All</p>
         </div>
-        <hr />
-        <div class="new-movies">
-          <div class="movie-item">
-            <div class="movie-img"></div>
-            <p>Rating: 3.5</p>
-            <p>The Good Movie</p>
-          </div>
-          <div class="movie-item">
-            <div class="movie-img"></div>
-            <p>Rating: 3.5</p>
-            <p>The Good Movie</p>
-          </div>
-          <div class="movie-item">
-            <div class="movie-img"></div>
-            <p>Rating: 3.5</p>
-            <p>The Good Movie</p>
-          </div>
-          <div class="movie-item">
-            <div class="movie-img"></div>
-            <p>Rating: 3.5</p>
-            <p>The Good Movie</p>
-          </div>
-          <div class="movie-item">
-            <div class="movie-img"></div>
-            <p>Rating: 3.5</p>
-            <p>The Good Movie</p>
-          </div>
+      </div>
+      <hr />
+      <div class="new-movies">
+        <div class="movie-item">
+          <div class="movie-img"></div>
+          <p>Rating: 3.5</p>
+          <p>The Good Movie</p>
+        </div>
+        <div class="movie-item">
+          <div class="movie-img"></div>
+          <p>Rating: 3.5</p>
+          <p>The Good Movie</p>
+        </div>
+        <div class="movie-item">
+          <div class="movie-img"></div>
+          <p>Rating: 3.5</p>
+          <p>The Good Movie</p>
+        </div>
+        <div class="movie-item">
+          <div class="movie-img"></div>
+          <p>Rating: 3.5</p>
+          <p>The Good Movie</p>
+        </div>
+        <div class="movie-item">
+          <div class="movie-img"></div>
+          <p>Rating: 3.5</p>
+          <p>The Good Movie</p>
         </div>
       </div>
     </section>
-    <!-- Classics -->
-    <section class="classics">
-      <div class="release-wrapper">
+    <section id="classics">
+      <div class="release-container">
         <div class="release-title">
           <h2>Classic Movies</h2>
           <p>View All</p>
         </div>
-        <hr />
-        <div class="classic-movies">
-          <div class="classic-item">
-            <div class="classic-img"></div>
-            <p>Rating: 3.5</p>
-            <p>The Good Movie</p>
-          </div>
-          <div class="classic-item">
-            <div class="classic-img"></div>
-            <p>Rating: 3.5</p>
-            <p>The Good Movie</p>
-          </div>
-          <div class="classic-item">
-            <div class="classic-img"></div>
-            <p>Rating: 3.5</p>
-            <p>The Good Movie</p>
-          </div>
-          <div class="classic-item">
-            <div class="classic-img"></div>
-            <p>Rating: 3.5</p>
-            <p>The Good Movie</p>
-          </div>
-          <div class="classic-item">
-            <div class="classic-img"></div>
-            <p>Rating: 3.5</p>
-            <p>The Good Movie</p>
-          </div>
+      </div>
+      <hr />
+      <div class="new-movies">
+        <div class="movie-item">
+          <div class="movie-img"></div>
+          <p>Rating: 3.5</p>
+          <p>The Good Movie</p>
+        </div>
+        <div class="movie-item">
+          <div class="movie-img"></div>
+          <p>Rating: 3.5</p>
+          <p>The Good Movie</p>
+        </div>
+        <div class="movie-item">
+          <div class="movie-img"></div>
+          <p>Rating: 3.5</p>
+          <p>The Good Movie</p>
+        </div>
+        <div class="movie-item">
+          <div class="movie-img"></div>
+          <p>Rating: 3.5</p>
+          <p>The Good Movie</p>
+        </div>
+        <div class="movie-item">
+          <div class="movie-img"></div>
+          <p>Rating: 3.5</p>
+          <p>The Good Movie</p>
         </div>
       </div>
     </section>
-    <!-- Right Side -->
-    <aside class="right">side right</aside>
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-flex">
-        <ul>
-          <li>
-            <a href=""><i class="fa-brands fa-x-twitter fa-6x" style="color: #a6a6a6"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-brands fa-instagram fa-6x" style="color: #a6a6a6"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-solid fa-envelope fa-6x" style="color: #a6a6a6"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-brands fa-square-facebook fa-6x" style="color: #a6a6a6"></i></a>
-          </li>
-        </ul>
-        <p>©️ Critical Cinema Review 2024</p>
-      </div>
-    </footer>
-  </div>
+  </main>
+  <footer>
+    <div class="footer-flex">
+      <ul>
+        <li>
+          <a href=""><i class="fa-brands fa-x-twitter fa-6x"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-instagram fa-6x"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-solid fa-envelope fa-6x"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-square-facebook fa-6x"></i></a>
+        </li>
+      </ul>
+      <p>©️ Critical Cinema Review 2024</p>
+    </div>
+    <script src="public/scripts/index.js"></script>
+  </footer>
 </body>
 
 </html>
