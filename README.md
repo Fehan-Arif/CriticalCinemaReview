@@ -1,2 +1,2 @@
 # CriticalCinemaReview
-A website to review movies, and tv shows
+IMDB, rotten tomatoes type inspired mock template of cinema review.
