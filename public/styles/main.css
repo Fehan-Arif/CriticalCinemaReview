@@ -229,15 +229,6 @@ img {
   }
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-
-  .prev,
-  .next {
-    font-size: 11px;
-  }
-}
-
 /* New Release */
 #new-release,
 #classics {
@@ -308,4 +299,32 @@ hr {
 
 .footer-flex>ul>li>a:hover {
   color: grey;
+}
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 1024px) {
+  .new-movies {
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+
+  .navbar-login {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .new-movies {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next {
+    font-size: 11px;
+  }
 }
